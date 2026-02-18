@@ -1,24 +1,26 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+  // DARK MODE
+  const toggle = document.getElementById("themeToggle");
+
+  if (toggle) {
+    toggle.onclick = () => {
+      document.body.classList.toggle("dark");
+    };
+  }
+
+});
+
 // SCROLL
 function scrollToSection(id) {
-  document.getElementById(id)
-    .scrollIntoView({ behavior: "smooth" });
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 // FORM
 function submitForm(e) {
   e.preventDefault();
-  alert("Message sent successfully!");
+  alert("Message sent!");
 }
-
-// DARK MODE
-const toggle = document.getElementById("themeToggle");
-
-toggle.onclick = () => {
-  document.body.classList.toggle("dark");
-
-  if (document.body.classList.contains("dark")) {
-    toggle.textContent = "☀️";
-  } else {
-    toggle.textContent = "🌙";
-  }
-};
