@@ -1,31 +1,94 @@
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
 }
 
-.header, .footer {
-  background-color: #f8f9fa;
-  padding: 20px;
+/* HEADER */
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 15px;
   text-align: center;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: #343a40;
-  padding: 10px;
-}
-
-.nav a {
+nav a {
   color: white;
+  margin: 10px;
   text-decoration: none;
-  padding: 10px;
+  font-weight: bold;
 }
 
-@media (max-width: 600px) {
-  .nav {
-    flex-direction: column;
-  }
+/* HERO */
+.hero {
+  background: url("https://picsum.photos/1200/500") center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+}
+
+/* CARD SECTIONS */
+.card {
+  background: white;
+  margin: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 220px;
+  border-radius: 10px;
+}
+
+/* VIDEO */
+.video-container iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  background: #0d47a1;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
