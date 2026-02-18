@@ -1,40 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Website</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Green Valley School</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to Our School</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#admissions">Admissions</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="about">
-            <h2>About Our School</h2>
-            <p>Our school provides quality education to students in a nurturing environment.</p>
-        </section>
+<!-- NAVBAR -->
+<header>
+  <h1>🌿 Green Valley School</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#admission">Admission</a>
+    <a href="#events">Events</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-        <section id="admissions">
-            <h2>Admissions</h2>
-            <p>Learn about our admission process and how to apply.</p>
-        </section>
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <h2>Shaping Bright Futures ✨</h2>
+  <p>Modern Education • Smart Classes • Sports Excellence</p>
+  <button onclick="scrollToSection('admission')">
+    Admission Open 2026
+  </button>
+</section>
 
-        <section id="courses">
-            <h2>Our Courses</h2>
-            <p>Explore a variety of courses that we offer to our students.</p>
-        </section>
+<!-- ADMISSION -->
+<section id="admission" class="card">
+  <h2>📢 Admission Open</h2>
+  <p>
+    Admissions are now open for the academic year 2026-27.
+    Limited seats available from Nursery to Class 12.
+  </p>
+  <ul>
+    <li>Smart Classrooms</li>
+    <li>Computer Labs</li>
+    <li>Transport Facility</li>
+    <li>Sports & Activities</li>
+  </ul>
+</section>
 
+<!-- EVENTS -->
+<section id="events" class="card">
+  <h2>🎉 School Events</h2>
+
+  <h3>Past Events</h3>
+  <ul>
+    <li>Annual Function 2025</li>
+    <li>Science Exhibition</li>
+    <li>Sports Day</li>
+  </ul>
+
+  <h3>Upcoming Events</h3>
+  <ul>
+    <li>Independence Day Celebration</li>
+    <li>Art & Craft Fair</li>
+    <li>Inter-School Cricket Tournament</li>
+  </ul>
+</section>
+
+<!-- VIDEO -->
+<section class="card">
+  <h2>🎥 School Campus Tour</h2>
+
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="card">
+  <h2>📸 Photo Gallery</h2>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/300?1">
+    <img src="https://picsum.photos/300?2">
+    <img src="https://picsum.photos/300?3">
+    <img src="https://picsum.photos/300?4">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="card">
+  <h2>📞 Contact Us</h2>
+
+  <p>📍 Address: Green Valley School, MP, India</p>
+  <p>📧 Email: info@greenvalley.edu</p>
+  <p>📱 Phone: +91 9876543210</p>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Green Valley School | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Get in touch with us for any inquiries.</p>
