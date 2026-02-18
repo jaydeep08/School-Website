@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Green Valley School</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Valley School</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -11,6 +17,7 @@
 <!-- NAVBAR -->
 <header>
   <h1>🌿 Green Valley School</h1>
+
   <nav>
     <a href="#home">Home</a>
     <a href="#admission">Admission</a>
@@ -18,59 +25,66 @@
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
+
+  <!-- Theme Toggle -->
+  <button id="themeToggle">🌙</button>
 </header>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section id="home" class="hero">
-  <h2>Shaping Bright Futures ✨</h2>
-  <p>Modern Education • Smart Classes • Sports Excellence</p>
-  <button onclick="scrollToSection('admission')">
-    Admission Open 2026
-  </button>
+  <div class="hero-content">
+    <h2>Shaping Bright Futures ✨</h2>
+    <p>Modern Education • Smart Classes • Sports Excellence</p>
+    <button onclick="scrollToSection('admission')">
+      Admission Open 2026
+    </button>
+  </div>
 </section>
 
 <!-- ADMISSION -->
 <section id="admission" class="card">
   <h2>📢 Admission Open</h2>
   <p>
-    Admissions are now open for the academic year 2026-27.
-    Limited seats available from Nursery to Class 12.
+    Admissions are now open for 2026-27. Limited seats available.
   </p>
-  <ul>
-    <li>Smart Classrooms</li>
-    <li>Computer Labs</li>
-    <li>Transport Facility</li>
-    <li>Sports & Activities</li>
-  </ul>
+
+  <div class="features">
+    <div>Smart Classes</div>
+    <div>Computer Labs</div>
+    <div>Sports Campus</div>
+    <div>Transport</div>
+  </div>
 </section>
 
 <!-- EVENTS -->
 <section id="events" class="card">
-  <h2>🎉 School Events</h2>
+  <h2>🎉 Events</h2>
 
-  <h3>Past Events</h3>
-  <ul>
-    <li>Annual Function 2025</li>
-    <li>Science Exhibition</li>
-    <li>Sports Day</li>
-  </ul>
+  <div class="events-grid">
+    <div class="event">
+      <h3>Annual Function</h3>
+      <p>Celebrating talent & achievements.</p>
+    </div>
 
-  <h3>Upcoming Events</h3>
-  <ul>
-    <li>Independence Day Celebration</li>
-    <li>Art & Craft Fair</li>
-    <li>Inter-School Cricket Tournament</li>
-  </ul>
+    <div class="event">
+      <h3>Sports Day</h3>
+      <p>Inter-school competitions.</p>
+    </div>
+
+    <div class="event">
+      <h3>Science Fair</h3>
+      <p>Innovation & creativity showcase.</p>
+    </div>
+  </div>
 </section>
 
 <!-- VIDEO -->
 <section class="card">
-  <h2>🎥 School Campus Tour</h2>
+  <h2>🎥 Campus Tour</h2>
 
   <div class="video-container">
     <iframe
       src="https://www.youtube.com/embed/tgbNymZ7vqY"
-      frameborder="0"
       allowfullscreen>
     </iframe>
   </div>
@@ -78,49 +92,36 @@
 
 <!-- GALLERY -->
 <section id="gallery" class="card">
-  <h2>📸 Photo Gallery</h2>
+  <h2>📸 Gallery</h2>
 
   <div class="gallery">
-    <img src="https://picsum.photos/300?1">
-    <img src="https://picsum.photos/300?2">
-    <img src="https://picsum.photos/300?3">
-    <img src="https://picsum.photos/300?4">
+    <img src="https://picsum.photos/400?1">
+    <img src="https://picsum.photos/400?2">
+    <img src="https://picsum.photos/400?3">
+    <img src="https://picsum.photos/400?4">
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="card">
-  <h2>📞 Contact Us</h2>
+  <h2>📞 Contact</h2>
 
-  <p>📍 Address: Green Valley School, MP, India</p>
-  <p>📧 Email: info@greenvalley.edu</p>
-  <p>📱 Phone: +91 9876543210</p>
+  <p>📍 MP, India</p>
+  <p>📧 info@school.com</p>
+  <p>📱 +91 9876543210</p>
 
   <form onsubmit="submitForm(event)">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
     <textarea placeholder="Message"></textarea>
-    <button type="submit">Send Message</button>
+    <button type="submit">Send</button>
   </form>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 Green Valley School | All Rights Reserved</p>
+  © 2026 Green Valley School
 </footer>
 
 <script src="script.js"></script>
-
-</body>
-</html>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for any inquiries.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Our School. All rights reserved.</p>
-    </footer>
 </body>
 </html>
